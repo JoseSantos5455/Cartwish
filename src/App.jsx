@@ -2,9 +2,8 @@
 import './App.css'
 import Navbar from './components/NavBar/navbar'
 import MainCarousel from './components/HomeCarousel/MainCarousel'
-import ProductCartCarousel from './components/HomeSectionCard/ProductCartCarousel'
-
-
+import ProductCarosel from './components/HomeSectionCard/ProductCarosel'
+import Footer from './components/Footer/Footer'
 function App() {
   
 
@@ -12,7 +11,9 @@ function App() {
     <>
      <Navbar/>
      <MainCarousel/>
-     <ProductCartCarousel/>
+     <ProductCarosel/>
+     <Footer/>
+    
     </>
   )
 }

@@ -199,7 +199,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className="bg-white">
+    <div className="bg-white sticky top-0 z-10">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -341,12 +341,12 @@ export default function Navbar() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-white">
+      <header className=" bg-white sticky top-0 z-10">
         {/* <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           Get free delivery on orders over $100
         </p> */}
 
-        <nav aria-label="Top" className="mx-auto w-full px-4 sm:px-6 lg:px-8">
+        <nav aria-label="Top" className="mx-auto w-full px-4 sm:px-6 lg:px-8 ">
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
               <button
@@ -382,7 +382,7 @@ export default function Navbar() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? 'border-indigo-600 text-indigo-600'
+                                  ? 'border-orange-600 text-orange-600'
                                   : 'border-transparent text-gray-700 hover:text-gray-800',
                                 'relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out'
                               )}
@@ -522,7 +522,7 @@ export default function Navbar() {
       <div>
   <div className="flex flex-col p-2 m-h-screen py-2 w-full mx-auto">
     <div
-      className="bg-white items-center justify-between w-full flex rounded-full shadow-lg p-2 mb-3 sticky "
+      className="bg-white items-center justify-between w-full flex rounded-full shadow-lg p-2 mb-3  "
       style={{ top: 5 }}
     >
       <div>
