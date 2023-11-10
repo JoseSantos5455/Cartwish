@@ -520,7 +520,7 @@ export default function Navbar() {
       </header> 
 
       <div>
-  <div className="flex flex-col p-2 m-h-screen py-2 w-full mx-auto">
+  <div className="flex flex-col p-2 m-h-screen py-2 w-full mx-auto ">
     <div
       className="bg-white items-center justify-between w-full flex rounded-full shadow-lg p-2 mb-3  "
       style={{ top: 5 }}
