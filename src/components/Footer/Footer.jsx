@@ -1,17 +1,20 @@
 
 
 const Footer = () => {
+
+  
   return (
     <>
     <>
   {/* This is an example component */}
   <div className=" bg-gray-900">
-    <div className="max-w-2xl mx-auto text-white py-10">
+    <div className="max-w-2xl mx-auto text-white py-5">
       <div className="text-center">
-        <h3 className="text-3xl mb-3"> Download our fitness app </h3>
+        <h3 className="text-2xl mb-3"> Download our CartWish app </h3>
         <p> Stay fit. All day, every day. </p>
-        <div className="flex justify-center my-10">
-          <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-52 mx-2">
+        <div className="flex justify-center my-8">
+          <a href="">
+          <div className="flex items-center border w-auto rounded-lg px-2 py-2 w-52 mx-2">
             <img
               src="https://cdn-icons-png.flaticon.com/512/888/888857.png"
               className="w-7 md:w-8"
@@ -21,7 +24,9 @@ const Footer = () => {
               <p className="text-sm md:text-base"> Google Play Store </p>
             </div>
           </div>
-          <div className="flex items-center border w-auto rounded-lg px-4 py-2 w-44 mx-2">
+          </a>
+          <a href="">
+          <div className="flex items-center border w-auto rounded-lg px-2 py-2 w-44 mx-2">
             <img
               src="https://cdn-icons-png.flaticon.com/512/888/888841.png"
               className="w-7 md:w-8"
@@ -31,13 +36,14 @@ const Footer = () => {
               <p className="text-sm md:text-base"> Apple Store </p>
             </div>
           </div>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </>
 
-      <footer className="relative  bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px] px-10">
+      <footer className="relative  bg-white pb-5 pt-10 dark:bg-dark lg:pb-10 lg:pt-[50px] px-10">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 sm:w-2/3 lg:w-3/12">
@@ -54,16 +60,25 @@ const Footer = () => {
                     className="max-w-full hidden dark:block"
                   />
                 </a>
-                
-                <p className="flex items-center text-sm font-medium text-dark dark:text-white">
+                <p className="flex items-center text-2sm pb-5 font-medium text-dark dark:text-white">
                  
-                  <i className="fa-solid fa-headset px-3"></i> <span>+012 (345) 678 99</span>
+                <i className="fa-solid fa-envelope px-3"></i> <span className=" text-orange-600"><a href="mailto:cs-reply@cartwish.in">cs-reply@cartwish.in</a></span>
+               </p>
+                <p className="flex items-center text-2sm pb-5 font-medium text-dark dark:text-white">
+                 
+                  <i className="fa-solid fa-headset px-3"></i> <span  className=" text-orange-600">+91 9870611048</span>
                 </p>
+                <p className="flex items-center text-2sm pb-2 font-medium text-dark dark:text-white">
+                 
+                <i className="fa-solid fa-location-dot px-3"></i> <span  className=" text-orange-600">Bengaluru – 560103, India
+</span>
+                </p>
+               
               </div>
             </div>
 
             <LinkGroup header="Resources">
-              <NavLink link="/#" label="SaaS Development" />
+              <NavLink link="/#" label="SaaS Development"  />
               <NavLink link="/#" label="Our Products" />
               <NavLink link="/#" label="User Flow" />
               <NavLink link="/#" label="User Strategy" />
@@ -83,7 +98,7 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 lg:w-3/12">
               <div className="mb-10 w-full">
-                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+                <h4 className="mb-9  text-xl font-bold text-dark dark:text-white">
                   Follow Us On
                 </h4>
                 <div className="mb-6 flex items-center">
@@ -334,11 +349,11 @@ const LinkGroup = ({ children, header }) => {
   return (
     <>
       <div className="w-full px-4 sm:w-1/2 lg:w-2/12">
-        <div className="mb-10 w-full">
-          <h4 className="mb-9 text-lg font-semibold text-dark dark:text-white">
+        <div className=" w-full">
+          <h4 className="mb-7 text-xl font-bold text-dark dark:text-white">
             {header}
           </h4>
-          <ul className="space-y-3">{children}</ul>
+          <ul className="space-y-1 text-orange-600 ">{children}</ul>
         </div>
       </div>
     </>
@@ -350,7 +365,7 @@ const NavLink = ({ link, label }) => {
     <li>
       <a
         href={link}
-        className="inline-block text-base leading-loose text-body-color hover:text-primary dark:text-dark-6"
+        className="inline-block text-base font-semibold leading-loose text-body-color hover:text-gray-950 dark:text-dark-6"
       >
         {label}
       </a>
