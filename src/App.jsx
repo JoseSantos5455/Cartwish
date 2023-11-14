@@ -5,6 +5,8 @@ import Navbar from './components/NavBar/navbar'
 // import ProductCarosel from './components/HomeSectionCard/ProductCarosel'
 import Footer from './components/Footer/Footer'
 import Product from './components/Products/Product'
+import ProductDetails from './components/ProductDetails/ProductDetails'
+import Cart from './components/cart/cart'
 function App() {
   
 
@@ -13,7 +15,9 @@ function App() {
      <Navbar/>
      {/* <MainCarousel/>
      <ProductCarosel/> */}
-     <Product/>
+     {/* <Product/> */}
+     {/* <ProductDetails/> */}
+     <Cart/>
 
      <Footer/>
     
