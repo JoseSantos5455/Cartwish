@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer'
 import Product from './components/Products/Product'
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import Cart from './components/cart/cart'
+import CheckOut from './components/Checkout/CheckOut'
 function App() {
   
 
@@ -17,7 +18,8 @@ function App() {
      <ProductCarosel/> */}
      {/* <Product/> */}
      {/* <ProductDetails/> */}
-     <Cart/>
+     {/* <Cart/> */}
+     <CheckOut/>
 
      <Footer/>
     
