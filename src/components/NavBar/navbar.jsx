@@ -372,7 +372,7 @@ export default function Navbar() {
                   {/* <span className="sr-only">Your Company</span> */}
                   <img
                     className="h-11 w-28"
-                    src="./public/images/Mainlogo.png"
+                    src="./images/Mainlogo.png"
                     alt=""
                   />
                 </a>
