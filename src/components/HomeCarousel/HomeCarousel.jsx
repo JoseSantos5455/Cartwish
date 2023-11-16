@@ -2,7 +2,7 @@ import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { MainCarouselData } from './MainCarouselData';
 
-const MainCarousel = () => {
+const HomeCarousel = () => {
   const items = MainCarouselData.map((item) => (
     <img className='cursor-pointer' role='presentation' src={item.image} alt={item.alt} />
   ));
@@ -20,4 +20,4 @@ const MainCarousel = () => {
   );
 };
 
-export default MainCarousel;
+export default HomeCarousel;

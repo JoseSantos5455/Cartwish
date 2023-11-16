@@ -8,6 +8,7 @@ import {
 // import { Fragment } from 'react'
 import { Menu } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
+// import { useNavigate } from "react-router-dom";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -207,6 +208,18 @@ const navigation = {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
+
+  // const handleCategoryClick = (category, section, item, close)=>{
+  //   navigate(`${category.id}/${section.id}/${item.id}`);
+  //   close();
+  // };
+
+
+
+  // const navigate = useNavigate();
+
+  
+
   return (
     <div className="bg-white sticky top-0 z-10">
       {/* Mobile menu */}
@@ -368,7 +381,7 @@ export default function Navbar() {
 
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
-                <a href="#">
+                <a href="/">
                   {/* <span className="sr-only">Your Company</span> */}
                   <img
                     className="h-11 w-28"
@@ -385,12 +398,11 @@ export default function Navbar() {
                     <Popover key={category.name} className="flex">
                       {({ open }) => (
                         <>
-                          <div className="relative flex">
+                          <div className="relative flex ">
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? "border-orange-600 text-orange-600"
-                                  : "border-transparent text-gray-700 hover:text-gray-800",
+                                  ? "border-orange-600 text-orange-600": "border-transparent text-gray-700 hover:text-gray-800",
                                 "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                               )}
                             >
@@ -468,6 +480,12 @@ export default function Navbar() {
                                                 key={item.name}
                                                 className="flex"
                                               >
+                                              {/* <p onClick={()=> handleCategoryClick(
+                                                category,
+                                                section,
+                                                item,
+                                                close
+                                              )}></p> */}
                                                 <a
                                                   href={item.href}
                                                   className="hover:text-gray-800"

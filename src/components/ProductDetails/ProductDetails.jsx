@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import { Mens_kurta } from "../../assets/Mens_kurta";
-import ProductCard from '../Products/ProductCard';
+import ProductCard from '../Product/ProductCard';
 const product = {
   name: 'Basic Tee 6-Pack',
   price: '$192',
