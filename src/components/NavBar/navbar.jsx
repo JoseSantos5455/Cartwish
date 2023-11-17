@@ -5,10 +5,10 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-// import { Fragment } from 'react'
+
 import { Menu } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-// import { useNavigate } from "react-router-dom";
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -385,7 +385,7 @@ export default function Navbar() {
                   {/* <span className="sr-only">Your Company</span> */}
                   <img
                     className="h-11 w-28"
-                    src="./images/Mainlogo.png"
+                    src="../images/Mainlogo.png"
                     alt=""
                   />
                 </a>

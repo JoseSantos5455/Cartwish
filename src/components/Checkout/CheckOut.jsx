@@ -7,8 +7,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 
 // import { useLocation } from 'react-router-dom'; // Add this import
-import DeliveryAddressForm from "./DeliveryAddressForm";
-import OrderSummary from "./OrderSummary";
+// import DeliveryAddressForm from "./DeliveryAddressForm";
+// import OrderSummary from "./OrderSummary";
 
 const steps = ["Login", "Delivery Address", "Order Summary", "Payment"];
 

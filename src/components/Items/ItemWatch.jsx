@@ -8,8 +8,8 @@ import {
   PlusIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
-import ProductCard from "./ProductCard";
-import { Mens_kurta } from "../../assets/Mens_kurta";
+import ProductCard from "../Product/ProductCard";
+import { SmartWatch } from "../../assets/SmartWatchesData";
 
 const sortOptions = [
   { name: "Price: Low to High", href: "#", current: false },
@@ -88,7 +88,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Product() {
+export default function ItemWatch() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   return (
@@ -221,7 +221,7 @@ export default function Product() {
         <main className="mx-auto  px-4 sm:px-6 lg:px-8 bg-stone-100 p-2">
           <div className="flex items-baseline justify-between border-b bg-white p-4 rounded-2xl border-gray-200  shadow-xl dark:bg-gray-800 pb-6 pt-6">
             <h1 className="text-2xl lg:text-4xl font-bold tracking-tight  text-gray-900">
-             Men's Kurtas
+              New Arrivals
             </h1>
             <div className="flex items-center ">
               <Menu as="div" className="relative inline-block text-left b">
@@ -367,7 +367,7 @@ export default function Product() {
               {/* Product grid */}
               <div className="lg:col-span-3 bg-white p-4 rounded-2xl shadow-xl dark:bg-gray-800">
                 <div className="flex flex-wrap justify-center">
-                  {Mens_kurta.map((item) => (
+                  {SmartWatch.map((item) => (
                     <ProductCard product={item} />
                   ))}
                 </div>

@@ -2,7 +2,7 @@
 
 function HomeSectionCard( {product}) {
   return (
-    <div className=" w-10/12 max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 text-center overflow-hidden " data-aos="fade-up"  data-aos-duration="1000">
+    <div className=" w-10/12 max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700 text-center overflow-hidden my-9" data-aos="fade-up"  data-aos-duration="1000">
       <a href="#">
         <img
           className="p-2 rounded-t-lg mx-auto overflow-hidden  h-[19rem] object-cover max-w-fit "

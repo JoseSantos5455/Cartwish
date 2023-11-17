@@ -8,8 +8,9 @@ import {
   PlusIcon,
   Squares2X2Icon,
 } from "@heroicons/react/20/solid";
-import ProductCard from "./ProductCard";
-import { Mens_kurta } from "../../assets/Mens_kurta";
+import ProductCard from "../Product/ProductCard";
+import { Lehenga } from "../../assets/Lehnga";
+
 
 const sortOptions = [
   { name: "Price: Low to High", href: "#", current: false },
@@ -88,7 +89,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
-export default function Product() {
+export default function ItemLehenga() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   return (
@@ -367,7 +368,7 @@ export default function Product() {
               {/* Product grid */}
               <div className="lg:col-span-3 bg-white p-4 rounded-2xl shadow-xl dark:bg-gray-800">
                 <div className="flex flex-wrap justify-center">
-                  {Mens_kurta.map((item) => (
+                  {Lehenga.map((item) => (
                     <ProductCard product={item} />
                   ))}
                 </div>
