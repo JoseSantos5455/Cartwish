@@ -2,9 +2,9 @@
 import { Grid } from '@mui/material'
 const OrderCard = () => {
   return (
-    <div>
-      <Grid container spacing={2} sx={{justifyContent:"space-between"}}>
-      <Grid item xs={3}>
+    <div className='bg-white p-3 rounded-xl'>
+      <Grid container spacing={2} xs={{justifyContent:"space-between"}}>
+      <Grid item xs={5}>
 
       <div className='flex cursor-pointer'>
       <img className=' w-[5rem] h-[5rem] object-cover object-top ' src="https://rukminim1.flixcart.com/image/612/612/jsj90280/kurta/j/z/g/l-mtmkos0004-326-manthan-original-imafe35wha5ry36p.jpeg?q=70" alt="" />
@@ -16,14 +16,14 @@ const OrderCard = () => {
       </div>
       </Grid>
 
-      <Grid item sx={2}>
+      <Grid item xs={3}>
       <p>$1099</p>
       </Grid>
-      <Grid item sx={4}>
+      <Grid item xs={3}>
      {true && <div>
      <p>
         <span>
-            Delivered On March 03
+           <b> Delivered On March 03</b>
         </span>
 
       </p>
@@ -43,4 +43,4 @@ const OrderCard = () => {
   )
 }
 
-export default OrderCard
+export default OrderCard;

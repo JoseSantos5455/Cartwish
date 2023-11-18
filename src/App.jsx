@@ -5,13 +5,13 @@ import Navbar from "./components/NavBar/navbar";
 
 import Footer from "./components/Footer/Footer";
 
-import OrderDetails from './components/Order/OrderDetails';
+import OrderDetails from './components/Orders/OrderDetails';
 import HomePage from "./components/HomePage/HomePage";
 
 import Product from "./components/Product/Product";
 import ProductDetails from './components/ProductDetails/ProductDetails'
 import Cart from "./components/cart/cart";
-// import CheckOut from './components/Checkout/CheckOut';
+import CheckOut from './components/Checkout/CheckOut';
 
 import {
   createBrowserRouter,
@@ -24,7 +24,7 @@ import ItemLaptop from "./components/Items/ItemLaptop";
 import ItemPhone from "./components/Items/ItemPhone";
 import ItemSaree from "./components/Items/ItemSaree";
 import ItemLehenga from "./components/Items/ItemLehnga";
-// import Order from './components/Order/Order';
+import Order from "./components/Orders/Order";
 
 const router = createBrowserRouter([
   {
@@ -60,6 +60,15 @@ const router = createBrowserRouter([
     path: "/lehnga",
     element: <ItemLehenga />,
   },
+  {
+    path: "/account/order",
+    element: <Order/>,
+  },
+  
+  {
+    path: "/checkout",
+    element: <CheckOut/>,
+  },
   
   {
     path: "/:account/:order-detail",
@@ -82,15 +91,14 @@ function App() {
       {/* <Routes><Route path="/*" element={<ComponentsRoutes />}/></Routes> */}
       {/* <Navbar/> */}
       {/* <HomePage/> */}
-      {/* <MainCarousel/>
-     <ProductCarosel/> */}
+  
       {/* <Product/> */}
       {/* <ProductDetails/> */}
       {/* <Cart/> */}
       {/* <CheckOut/> */}
       {/* <Order/> */}
       {/* <OrderDetails/> */}
-      {/* <ItemWatch/> */}
+    
 
       <Footer />
     </>

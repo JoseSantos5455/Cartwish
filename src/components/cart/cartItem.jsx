@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const CartItem = () => {
   const [cartItems, setCartItems] = useState([
@@ -41,6 +42,10 @@ const CartItem = () => {
     return subtotal + shipping;
   };
 
+  const navigate= useNavigate();
+  const handlecheckOut = ()=>{
+    navigate("/checkout?step=2")
+  }
   return (
     <div className=" bg-gray-100 p-10 ">
       {/* <h1 className="mb-10 text-center text-2xl font-bold">Cart Items</h1> */}
@@ -135,7 +140,7 @@ const CartItem = () => {
               <p className="text-sm text-gray-700">including VAT</p>
             </div>
           </div>
-          <button className="mt-6 w-full rounded-md bg-gray-950 py-1.5 font-medium text-blue-50 hover:bg-orange-600">
+          <button onClick={handlecheckOut}  className="mt-6 w-full rounded-md bg-gray-950 py-1.5 font-medium text-blue-50 hover:bg-orange-600">
             <i className="fa-solid fa-credit-card pr-2"></i> Check out
           </button>
           <div className="text-center py-10 text-base lg:text-2xl font-bold text-orange-500">
