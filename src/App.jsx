@@ -25,6 +25,8 @@ import ItemPhone from "./components/Items/ItemPhone";
 import ItemSaree from "./components/Items/ItemSaree";
 import ItemLehenga from "./components/Items/ItemLehnga";
 import Order from "./components/Orders/Order";
+import LoginForm from "./auth/loginForm";
+import SignupForm from "./auth/signupForm";
 
 const router = createBrowserRouter([
   {
@@ -78,6 +80,15 @@ const router = createBrowserRouter([
   {
     path: "product/:productId",
     element: (<ProductDetails/> ),
+  },
+  {
+    path: "/login",
+    element: (<LoginForm/> ),
+  },
+ 
+  {
+    path: "/signup",
+    element: (<SignupForm/> ),
   },
  
 ]);

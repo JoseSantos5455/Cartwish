@@ -631,7 +631,7 @@ export default function Navbar() {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="/login"
                               className={classNames(
                                 active
                                   ? "bg-gray-100 text-gray-900"
@@ -647,7 +647,7 @@ export default function Navbar() {
                         <Menu.Item>
                           {({ active }) => (
                             <a
-                              href="#"
+                              href="/signup"
                               className={classNames(
                                 active
                                   ? "bg-gray-100 text-gray-900"
