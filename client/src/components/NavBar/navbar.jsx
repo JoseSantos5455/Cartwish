@@ -5,10 +5,8 @@ import {
   ShoppingBagIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-
 import { Menu } from "@headlessui/react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -208,18 +206,6 @@ const navigation = {
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-
-  // const handleCategoryClick = (category, section, item, close)=>{
-  //   navigate(`${category.id}/${section.id}/${item.id}`);
-  //   close();
-  // };
-
-
-
-  // const navigate = useNavigate();
-
-  
-
   return (
     <div className="bg-white sticky top-0 z-10">
       {/* Mobile menu */}
@@ -362,10 +348,6 @@ export default function Navbar() {
       </Transition.Root>
 
       <header className=" bg-white sticky top-0 z-10">
-        {/* <p className="flex h-10 items-center justify-center bg-indigo-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
-          Get free delivery on orders over $100
-        </p> */}
-
         <nav aria-label="Top" className="mx-auto w-full px-4 sm:px-6 lg:px-8 ">
           <div className="border-b border-gray-200">
             <div className="flex h-16 items-center">
@@ -382,7 +364,6 @@ export default function Navbar() {
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
                 <a href="/">
-                  {/* <span className="sr-only">Your Company</span> */}
                   <img
                     className="h-11 w-28"
                     src="../images/Mainlogo.png"
@@ -402,7 +383,8 @@ export default function Navbar() {
                             <Popover.Button
                               className={classNames(
                                 open
-                                  ? "border-orange-600 text-orange-600": "border-transparent text-gray-700 hover:text-gray-800",
+                                  ? "border-orange-600 text-orange-600"
+                                  : "border-transparent text-gray-700 hover:text-gray-800",
                                 "relative z-10 -mb-px flex items-center border-b-2 pt-px text-sm font-medium transition-colors duration-200 ease-out"
                               )}
                             >
@@ -480,7 +462,7 @@ export default function Navbar() {
                                                 key={item.name}
                                                 className="flex"
                                               >
-                                              {/* <p onClick={()=> handleCategoryClick(
+                                                {/* <p onClick={()=> handleCategoryClick(
                                                 category,
                                                 section,
                                                 item,
@@ -691,18 +673,6 @@ export default function Navbar() {
           >
             <div>
               <div className="p-2 mr-1 rounded-full hover:bg-gray-100 cursor-pointer">
-                {/* <svg
-            className="h-6 w-6 text-gray-500"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
-              clipRule="evenodd"
-            />
-          </svg> */}
               </div>
             </div>
             <input

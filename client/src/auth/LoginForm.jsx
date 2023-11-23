@@ -1,6 +1,20 @@
 
 
 const LoginForm = () => {
+  const handleSubmit=(event)=>{
+    event.preventDefault()
+
+    const data= new FormData(event.currentTarget);
+
+    const userData={
+      firstName:data.get("firstName"),
+      lastName:data.get("lastName"),
+      password:data.get("password"),
+    }
+
+    console.log(userData)
+
+  }
   return (
     <div>
       <>
@@ -20,19 +34,20 @@ const LoginForm = () => {
         {/* Col */}
         <div className="w-full lg:w-1/2 bg-white p-5 rounded-xl lg:rounded-l-none">
           <h3 className="pt-4 text-2xl text-center">Welcome Back!</h3>
-          <form className="px-8 pt-6 pb-8 mb-4 bg-white rounded">
+          <form onSubmit={handleSubmit} className="px-8 pt-6 pb-8 mb-4 bg-white rounded">
             <div className="mb-4">
               <label
                 className="block mb-2 text-sm font-bold text-gray-700"
-                htmlFor="username"
+                htmlFor="email"
               >
-                Username
+               Email
               </label>
               <input
                 className="w-full px-3 py-2 text-sm leading-tight text-gray-700 border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-                id="username"
+                id="email"
+                name="email"
                 type="text"
-                placeholder="Username"
+                placeholder="Email"
               />
             </div>
             <div className="mb-4">
@@ -65,7 +80,8 @@ const LoginForm = () => {
             <div className="mb-6 text-center">
               <button
                 className="w-full px-4 py-2 font-bold text-white bg-gray-950 rounded-full hover:bg-orange-500 focus:outline-none focus:shadow-outline"
-                type="button"
+                type="submit"
+
               >
                 Login  <i className="fa-solid fa-right-to-bracket  pl-1"></i>
               </button>
